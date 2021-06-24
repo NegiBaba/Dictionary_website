@@ -1,0 +1,52 @@
+body {
+	border: 2px solid rgb(217, 217, 217);
+	border-radius: 8px;
+	height: 95.5vh;
+	margin: 15px;
+	padding: 0;
+}
+input {
+	border: 1px solid #abcdcf;
+	border-radius: 5px;
+	color: #345065;
+	display: block;
+	font-family: sans-serif;
+	margin: 20px auto;
+	width: 25%;
+}
+
+input:focus {
+	outline: none;
+}
+
+h1 {
+	color: #233645;
+	font-family: "Montserrat";
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+button {
+	font-family: "Montserrat";
+}
+
+.container {
+	margin: 15% auto;
+	text-align: center;
+}
+
+.text-input {
+	padding: 4px 12px;
+	font-size: 1.4rem;
+}
+
+.btn {
+	border: 2px solid;
+	font-weight: 600;
+}
+
+/** RESULT PAGE ***/
+.word-heading {
+	font-family: "Montserrat";
+	font-size: 2rem;
+}
