@@ -1,0 +1,46 @@
+/*Self NOTE: 
+Try to make this image pattern as the background with gradient
+clear on the top and bottom while a bit opaque in the actual body
+
+url = https://www.tekportal.net/wp-content/uploads/2018/12/patterns.jpg
+*/
+
+
+body {
+	border: 2px solid rgb(217, 217, 217);
+	border-radius: 8px;
+	height: 95.5vh;
+	margin: 15px;
+	padding: 0;
+}
+
+.result-container {
+	margin-left: auto;
+	margin-top:  50px;
+	padding: 30px 30px 30px 80px;
+}
+
+.word {
+	color: #3b3e41;
+	font-family: 'Playfair Display', serif;
+	font-size: 3rem;
+	font-weight: 500;
+}
+/*#5690b1*/
+
+.PoS-container {
+}
+
+.part-of-speach {
+	color: #225f73;
+	display: inline;
+	font-family: Open Sans,Helvetica,Arial,sans-serif;
+	font-size: 1.1rem;
+	font-weight: 400;
+	padding: 0 7px;
+}
+
+.bar {
+	color: #225f73;
+	padding: 0 7px;
+}

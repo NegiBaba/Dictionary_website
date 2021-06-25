@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const https = require("https");
 
+const Data = require("./Data")
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,19 +15,22 @@ app.get("/", function(req, res) {
 
 app.post("/", function(req, res) {
 	var word = req.body.word;
-	var url = "https://api.dictionaryapi.dev/api/v2/entries/en_US/" + word;
+	// var url = "https://api.dictionaryapi.dev/api/v2/entries/en_US/" + word;
 	// https.get(url, function(response) {
 	// 	response.on("data", function(data) {
 	// 		const Data = JSON.parse(data);
 	// 		console.log(Data[0].meanings[0].definitions[0].definition);
 
 	// 		var word = Data[0].word;
-	// 		var list = Data[0].meanings[0].definitions[0].synonyms
+	// 		var list = Data[0].meanings;
 
-	// 		res.render("result", {word: word});
+	// 		res.render("result", {word: word, list: list});
 	// 	})
 	// })
-	res.render("result", { word: "/həˈloʊ/" });
+	var word = Data[0].word;
+	var list = Data[0].meanings;
+	console.log(word)
+	res.render("result", {word: word, list: list});
 
 })
 app.listen(3000, function() {
