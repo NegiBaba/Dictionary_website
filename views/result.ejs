@@ -12,15 +12,25 @@
 	</head>
 	<body>
 		<div class="result-container">
-			<h1 class="word"><%= word %></h1>
-			<div class="PoS-container">
-				<% for (let i = 0; i < list.length; i++) {%>
-				<h2 class="part-of-speach"><%= list[i].partOfSpeech %></h2>
-				<% if (i != list.length - 1) { %>
-				<span class = "bar">|</span>
-				<% } %>
-				<%}%>
+			<div class="heading-container">
+				<h1 class="word"><%= word %></h1>
+				<div class="phonetics">
+					<% for (let i = 0; i < list.length; i++) {%>
+					<h2 class="phonetics-text"><%= list[i].text %></h2>
+					<% if (i != list.length - 1) { %>
+					<span class = "bar">|</span>
+					<% } %>
+					<%}%>
+				</div>
 			</div>
+		</div>
+		<div class="parts-of-speach-container row">
+			<% for (let i = 0; i < length; i++) {%>
+			<div class="definition-container col-md-<%= boxWidth %>">
+				<h3 class="pos-heading"><%=partsOfSpeach[i].partOfSpeech%></h3>
+				<p><%= partsOfSpeach[i].definitions[0].definition%></p>
+			</div>
+			<% } %>
 		</div>
 	</body>
 </html>

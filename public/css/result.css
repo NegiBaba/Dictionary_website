@@ -17,30 +17,41 @@ body {
 .result-container {
 	margin-left: auto;
 	margin-top:  50px;
-	padding: 30px 30px 30px 80px;
+	padding: 0px 30px 30px 30px;
+	text-align: center;
 }
 
 .word {
 	color: #3b3e41;
 	font-family: 'Playfair Display', serif;
-	font-size: 3rem;
+	font-size: 3.5rem;
 	font-weight: 500;
 }
 /*#5690b1*/
 
-.PoS-container {
-}
-
-.part-of-speach {
+.phonetics-text {
 	color: #225f73;
 	display: inline;
 	font-family: Open Sans,Helvetica,Arial,sans-serif;
 	font-size: 1.1rem;
 	font-weight: 400;
-	padding: 0 7px;
+	text-decoration: none;
 }
 
 .bar {
 	color: #225f73;
-	padding: 0 7px;
+	font-weight: 300;
+	padding: 0 10px;
+}
+
+.parts-of-speach-container {
+	padding: 20px 30px;
+	text-align: center;
+}
+.definition-container {
+}
+
+.pos-heading {
+	color: #4a7d95;
+	font-size: 1.5rem;
 }
