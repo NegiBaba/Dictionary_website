@@ -25,7 +25,6 @@ app.post("/", function(req, res) {
 			var boxWidth = 12 / length;
 			var partsOfSpeach = Data[0].meanings;
 
-			console.log(partsOfSpeach);
 			res.render("result", {word: word, list: list, 
 							length: length, boxWidth: boxWidth,
 								partsOfSpeach: partsOfSpeach});

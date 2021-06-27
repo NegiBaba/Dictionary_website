@@ -24,9 +24,15 @@
 				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="parts-of-speach-container row">
 			<% for (let i = 0; i < length; i++) {%>
-			<div class="definition-container col-md-<%= boxWidth %>">
+			<div <% if (i < length - 1) { %>
+					class="definition-container bd-right col-md-<%= boxWidth %>"
+					<% } else {%>
+					class="definition-container col-md-<%= boxWidth %>"
+					<% }%>
+					 >
 				<h3 class="pos-heading"><%=partsOfSpeach[i].partOfSpeech%></h3>
 				<p><%= partsOfSpeach[i].definitions[0].definition%></p>
 			</div>
